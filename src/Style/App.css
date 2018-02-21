@@ -1,3 +1,13 @@
+:root {
+  --main-dark-color: linear-gradient(blue, pink);
+  --sec: red;
+}
+
+
+
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -26,7 +36,7 @@ body {
 
 .ls, .rs{
   grid-area: ls;
-  background: black;
+  background: var(--main-dark-color);
   width: 100%;
 }
 
@@ -56,7 +66,7 @@ h2 {
 .bar {
   width: 250px;
   height: 30px;
-  background-color: rgb(19, 1, 1);
+  background-color: var(--main-dark-color);
   margin: 20px 0 0 12%;
 
 }
@@ -133,8 +143,9 @@ h2 {
 
 .full-menu li {
   list-style: none;
-  border-bottom: 2px solid black;
-  border-left: 4px solid black;
+  border-bottom: 2px solid;
+  border-color: var(--sec);
+  border-left: 4px solid;
   
   font-size: 1.4em;
   width: max-content;
