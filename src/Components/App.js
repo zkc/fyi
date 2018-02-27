@@ -22,6 +22,10 @@ class App extends Component {
     this.state = {
       mode: "na"
     }
+
+    // console.log(document.styleSheets)
+    // load in :root class, change sheet with state. could be own piece 
+
   }
 
   render() {
@@ -44,6 +48,14 @@ class App extends Component {
         <section className="bio">
           {this.props.bio} 
         </section>
+
+        <section className="projects">
+          <div className="intro">
+            <span style={{ fontStyle: 'italic', fontSize: '2em'  }}>FlowReader</span>-- Read faster with this novel technique. I built this applet to help myself increase speed and comprehension. Plus I'm curious, how fast can one read?
+          </div>
+          <iframe src="https://zkc.github.io/flow-word/" frameborder="0" width="100%" height="100%" />
+        </section>
+
         <Resume {...this.props.resume} mode={this.state.mode} />
         <Contact {...this.props.contact} />
       </div>

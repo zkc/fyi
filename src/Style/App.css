@@ -1,11 +1,9 @@
 :root {
-  --main-dark-color: linear-gradient(blue, pink);
-  --sec: red;
+  --main-side-color: linear-gradient(black, rgb(180, 61, 164), black);
+  --sec: black;
 }
 
-
-
-
+/* load in :root class from js? */
 
 
 body {
@@ -22,8 +20,8 @@ body {
    "ls header rs"  
     "ls quote rs"
     "ls bio rs"
+    "ls projects rs"
     "ls resume rs"
-    /* "ls projects rs" */
     "ls contact rs"
     ;
   grid-template-columns: 1fr 87vw 1fr;
@@ -36,7 +34,7 @@ body {
 
 .ls, .rs{
   grid-area: ls;
-  background: var(--main-dark-color);
+  background: var(--main-side-color);
   width: 100%;
 }
 
@@ -94,13 +92,23 @@ h2 {
 .projects {
   grid-area: projects;
 
-  border: 1px solid rgb(73, 2, 73);
+  height: 150vh;
 
-  height: 105vh;
-
-  font-size: 2em;
-
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
 }
+
+.projects .intro {
+  font-size: 1.6em;
+  grid-row: 1;
+  padding: 0 5vw;
+}
+
+.projects iframe {
+  grid-row: 2;
+  z-index: 100;
+}
+
 
 .bio {
   height: 105vh;
