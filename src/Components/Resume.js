@@ -7,7 +7,7 @@ const Resume = ({ positions, link }) => {
   return (
     <div id="resume" className="resume">
       {positions.map(job => (
-        <div className="job">
+        <div className="job" key={job.title}>
           <h1 className="title">{job.title}</h1>
           <h2 className="location">{job.location}</h2>
           <ul className="points">
@@ -17,9 +17,10 @@ const Resume = ({ positions, link }) => {
           </ul>
         </div>
       ))}
-      <a className="resume-link" href={"https://resume.creddle.io/resume/d9o4r324bdb"}>Paper Resume</a>
+      <a className="resume-link" href={link}>Paper Resume</a>
     </div>
   )
 }
+
 
 export default Resume

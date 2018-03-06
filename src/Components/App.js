@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Navigator from './Navigator'
+// import Navigator from './Navigator'
 import Resume from './Resume'
 import Contact from './Contact'
 import Project from './Project'
@@ -30,36 +30,37 @@ class App extends Component {
   }
 
   render() {
+    const { basics, quote, bio, projects, resume, contact } = this.props
     return (
       <div className="main-page" >
-        <Navigator mode={this.state.mode} />
+        {/* <Navigator mode={this.state.mode} /> */}
         <div className="ls" />
         <div className="rs" />
         
         <header id="top" className="header"> 
-          <h1>{this.props.basics.name}</h1>
-          <h2>{this.props.basics.title}</h2>
+          <h1>{basics.name}</h1>
+          <h2>{basics.title}</h2>
           <div className="bar" />
         </header>
 
         <section className="quote">
-          <h3>"{this.props.quote.words_first_half}</h3>
-          <h3>{this.props.quote.words_second_half}"</h3>          
-          <h4>- {this.props.quote.speaker}</h4>
+          <h3>"{quote.words_first_half}</h3>
+          <h3>{quote.words_second_half}"</h3>          
+          <h4>- {quote.speaker}</h4>
         </section>
 
         <section className="bio">
-          {this.props.bio} 
+          {bio} 
         </section>
 
         <section className="projects">
         {
-          this.props.projects.map(p => <Project {...p} />)
+          projects.map(p => <Project {...p} key={p.title}/>)
         }
         </section>
 
-        <Resume {...this.props.resume} mode={this.state.mode} />
-        <Contact {...this.props.contact} />
+        <Resume {...resume} mode={this.state.mode} />
+        <Contact {...contact} />
       </div>
     )
   }

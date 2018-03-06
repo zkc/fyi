@@ -7,7 +7,7 @@ const Project = ({ title, description, iframe_link }) => (
       <span style={{ fontStyle: 'italic', fontSize: '2em'  }}>{title}</span>
       <p>{description}</p>
     </div>
-    {iframe_link && <iframe src={iframe_link} frameborder="0" width="100%" height="100%" />}
+    {iframe_link && <iframe title={title} src={iframe_link} frameBorder="0" width="100%" height="100%" />}
   </div>
 )
 
