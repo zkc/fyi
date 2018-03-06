@@ -87,26 +87,29 @@ h2 {
 }
 
 
-
-
 .projects {
   grid-area: projects;
 
-  height: 150vh;
-
   display: grid;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-auto-rows: 100vh;
+  margin-bottom: 50vh;
 }
 
-.projects .intro {
+.single-project {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+}
+
+.single-project .intro {
   font-size: 1.6em;
   grid-row: 1;
   padding: 0 5vw;
 }
 
-.projects iframe {
+.single-project iframe {
   grid-row: 2;
   z-index: 100;
+  height: 900px;
 }
 
 

@@ -6,6 +6,16 @@ import Contact from './Contact'
 import '../Style/App.css';
 
 
+const Project = ({ title, description, iframe_link }) => (
+  <div className="single-project">
+    <div className="intro">
+      <span style={{ fontStyle: 'italic', fontSize: '2em'  }}>{title}</span>
+      <p>{description}</p>
+    </div>
+    {iframe_link && <iframe src={iframe_link} frameborder="0" width="100%" height="100%" />}
+  </div>
+)
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -20,7 +30,7 @@ class App extends Component {
 
 
     this.state = {
-      mode: "na"
+      mode: "in dev"
     }
 
     // console.log(document.styleSheets)
@@ -40,20 +50,21 @@ class App extends Component {
           <h2>{this.props.basics.title}</h2>
           <div className="bar" />
         </header>
+
         <section className="quote">
           <h3>"{this.props.quote.words_first_half}</h3>
           <h3>{this.props.quote.words_second_half}"</h3>          
           <h4>- {this.props.quote.speaker}</h4>
         </section>
+
         <section className="bio">
           {this.props.bio} 
         </section>
 
         <section className="projects">
-          <div className="intro">
-            <span style={{ fontStyle: 'italic', fontSize: '2em'  }}>FlowReader</span>-- Read faster with this novel technique. I built this applet to help myself increase speed and comprehension. Plus I'm curious, how fast can one read?
-          </div>
-          <iframe src="https://zkc.github.io/flow-word/" frameborder="0" width="100%" height="100%" />
+        {
+          this.props.projects.map(p => <Project {...p} />)
+        }
         </section>
 
         <Resume {...this.props.resume} mode={this.state.mode} />

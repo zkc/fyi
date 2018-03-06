@@ -59,5 +59,12 @@
   "contact": {
     "email": "zkyle12@gmail.com", 
     "github": "https://github.com/zkc"
-  }
+  }, 
+  "projects": [
+    {
+      "title": "FlowReader",
+      "description": "Read faster with this novel technique. I built this applet to help myself increase speed and comprehension. Plus I'm curious, how fast can one read?",
+      "iframe_link": "https://zkc.github.io/flow-word/"
+    }
+  ]
 }
