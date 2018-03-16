@@ -51,13 +51,14 @@ body {
   font-size: 4em;
 }
 
-h1 {
+.header h1 {
   padding-left: 10%;
   margin: 0;
 }
 
-h2 {
+.header h2 {
   padding-left: 10%;
+  font-size: .5em;
   margin: 0;
 }
 
@@ -91,7 +92,7 @@ h2 {
   grid-area: projects;
 
   display: grid;
-  grid-auto-rows: 100vh;
+  grid-auto-rows: 150vh;
   margin-bottom: 50vh;
 }
 
@@ -109,7 +110,8 @@ h2 {
 .single-project iframe {
   grid-row: 2;
   z-index: 100;
-  height: 900px;
+  height: 100vh;
+  overflow: hidden;
 }
 
 

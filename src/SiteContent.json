@@ -65,6 +65,11 @@
       "title": "FlowReader",
       "description": "Read faster with this novel technique. I built this applet to help myself increase speed and comprehension. Plus I'm curious, how fast can one read?",
       "iframe_link": "https://zkc.github.io/flow-word/"
+    }, 
+    {
+      "title": "Potter's Wheel",
+      "description": "Trello-inspired, list and card based organization tool. This is a long term project.",
+      "iframe_link": "https://zkc.github.io/potters-wheel/"
     }
   ]
 }
