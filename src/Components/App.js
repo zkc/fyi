@@ -50,7 +50,8 @@ class App extends Component {
         </section>
 
         <section className="bio">
-          {bio} 
+          <p>{bio.topper}</p>
+          <p>{bio.body}</p> 
         </section>
 
         <section className="projects">
