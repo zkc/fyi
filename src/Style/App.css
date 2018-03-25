@@ -93,7 +93,13 @@ body {
 
   display: grid;
   grid-auto-rows: 150vh;
-  margin-bottom: 50vh;
+  margin-bottom: 10vh;
+}
+
+@media (max-width: 700px) {
+  .projects {
+    display: none;
+  }
 }
 
 .single-project {
@@ -122,12 +128,25 @@ body {
   text-align: center;
 }
 
+@media (max-width: 610px) {
+  .header {
+    font-size: 10vw;
+  }
+
+  .quote {
+    font-size:2em;
+  }
+
+  .bio {
+    font-size: 1.3em;
+  }
+}
 
 
 
 
 /* //// Navigator */
-
+/* 
 .navigator {
   position: fixed;
   left: 7vw;
@@ -136,10 +155,10 @@ body {
   width: 100px;
   height: 100px;
 
-  /* animation: fadein 5s ease-in; */
+  animation: fadein 5s ease-in;
   
   box-sizing: border-box;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }
 
 @keyframes fadein {
@@ -179,14 +198,5 @@ body {
   border: solid black 3px;
   border-left-width: 6px;
   border-bottom-width: 5px;
-}
+} */
 
-@media (max-width: 610px) {
-  .header {
-    font-size: 10vw;
-  }
-
-  .quote {
-    font-size:2em;
-  }
-}
