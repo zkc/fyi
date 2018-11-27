@@ -6,6 +6,10 @@ const styles = {
     background: 'lightblue', 
     padding: '0 40px',
     fontFamily:  "'Noto Sans', 'sans-serif'",
+    maxWidth: '1000px',
+    borderTopRightRadius: '50px',
+    borderBottomRightRadius: '50px'
+
   },
   nameHeader: {
     fontSize: '4em', 
@@ -15,6 +19,17 @@ const styles = {
   }, 
   skillsSection: {
     paddingLeft: '20px'
+  },
+  jobHeader: {
+    display: 'inline-block',
+    margin: '20px 0 0 0'
+  },
+  dates: {
+    margin: '0 30px',
+    display: 'inline-block'
+  },
+  bulletPoint: {
+    marginTop: '20px'
   }
 }
 
@@ -42,33 +57,62 @@ class App extends React.Component {
             <li>Material-UI</li> 
             <li>CSS Grid</li>
             <li>HTML</li>
+            <li>NoSQL/MongoDB</li>
+            <li>SQL</li>
           </ul>
         </section>
 
         <section className={classes.skillsSection}>
           <h3>Work Experience</h3>
-          <section>
-            <h4>Software Developer - Charter Communications</h4>
-            <h5>2017 - current</h5>
+          <div>
+            <h4 className={classes.jobHeader}>Software Developer - Charter Communications</h4>
+            <h5 className={classes.dates}>2017 - current</h5>
             <ul>
-              <li>
+              <li className={classes.bulletPoint}>
                 Built our greenfield React UI with Redux. Continued to be a resource on React for dev team. React is my strongest skill set so I jumped at the opportunity to initiate the codebase.
               </li>
-              <li>
+              <li className={classes.bulletPoint}>
                 Designed, implemented, and documented new architecture for our core automation functionality. Enjoyed the challenge of making something powerful enough for our expanding needs yet simple enough for less technical engineers to use directly.
               </li>
-              <li>
+              <li className={classes.bulletPoint}>
                 Handled API design decisions when called upon by the dev team.
               </li>
-              <li>
-                Became a first contact for fixing issues in our legacy Python/Django system. 
+              <li className={classes.bulletPoint}>
+                Became a first point of contact for fixing issues in our legacy Python/Django system. 
               </li>
-              <li>
-                Promoted dialogues within the group and man resulting in better agile procedures and improved clarity and documentation of product requirements. 
+              <li className={classes.bulletPoint}>
+                Promoted dialogues within the group and man resulting in better agile processes and improved clarity of product requirements. 
               </li>
             </ul>
-          </section>
+          </div>
+
+          <div>
+            <h4 className={classes.jobHeader}>Bastian Software Solutions - Project Manager</h4>
+            <h5 className={classes.dates}>2014 - 2016</h5>
+            <ul>
+              <li className={classes.bulletPoint}>
+                Worked in tandem with developers to implement custom software for warehouse logistics systems, often on-site. My primary tool was SQL with MS SQL Server.
+              </li>
+              <li className={classes.bulletPoint}>
+                Established clear communications to convey detailed technical problems from our developers and designers to the end clients. Notably improved relations with a previously difficult client as a result.
+              </li>
+            </ul>
+          </div>
+
+          <div>  
+            <h4 className={classes.jobHeader}>Indiana University School of Music - Lead Audio Engineer</h4>
+            <h5 className={classes.dates}>2012 - 2014</h5>
+            <ul>
+              <li className={classes.bulletPoint}>
+                Established the trust required for success in professional stage productions thru dedication to the craft.
+              </li>
+            </ul>
+          </div>
+
+
         </section>
+
+        
       </div>
 
     )
