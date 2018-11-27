@@ -3,8 +3,8 @@ import injectSheet from 'react-jss'
 
 const styles = {
   base: {
-    background: 'lightblue', 
-    padding: '0 40px',
+    background: '#ffcea3', 
+    padding: '0 40px 50px 40px',
     fontFamily:  "'Noto Sans', 'sans-serif'",
     maxWidth: '1000px',
     borderTopRightRadius: '50px',
@@ -30,6 +30,14 @@ const styles = {
   },
   bulletPoint: {
     marginTop: '20px'
+  }, 
+  link: {
+    display: 'inline-block',
+    color: '#191511', 
+    margin: '10px 20px'
+  }, 
+  line: {
+    border: '1px solid #000',
   }
 }
 
@@ -42,6 +50,11 @@ class App extends React.Component {
       <div className={classes.base}>
         <header className={classes.nameHeader}>Kyle Zucker</header>
         <header className={classes.subHeader}>Software Developer</header>
+
+        <a className={classes.link} href='mailto:zkyle12@gmail.com?Subject=Hello%20There!'>email</a>
+        <a className={classes.link} href='https://github.com/zkc'>github</a>
+
+        <hr className={classes.line}/>
 
         <section className={classes.skillsSection}>
           <h3>Skills</h3>
@@ -61,6 +74,8 @@ class App extends React.Component {
             <li>SQL</li>
           </ul>
         </section>
+
+        <hr className={classes.line}/>
 
         <section className={classes.skillsSection}>
           <h3>Work Experience</h3>
@@ -108,10 +123,53 @@ class App extends React.Component {
               </li>
             </ul>
           </div>
-
-
         </section>
 
+        <hr className={classes.line}/>
+
+        <section>
+          <h3>Education</h3>
+
+          <div>
+            <h4 className={classes.jobHeader}>Turing School of Software and Design, Denver CO</h4>
+            <h5 className={classes.dates}>Front End Development - 2016</h5>
+            <ul>
+              <li className={classes.bulletPoint}>
+                Full time course to expand and sharpen my skill set for modern web development teams. React and Javascript focused.
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className={classes.jobHeader}>Indiana University, Bloomington</h4>
+            <h5 className={classes.dates}>Bachelor of Science in Recording Arts, Informatics - 2012</h5>
+            <ul>
+              <li className={classes.bulletPoint}>
+                Studied the fundamentals of programming and logical thinking. Also made a significant amount of recordings.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <hr className={classes.line}/>
+
+        <section>
+          <h3>Fun Stuff</h3>
+          <ul>
+            <li>
+              Grew up playing drums, currently play guitar.
+            </li>
+            <li>
+              Volunteer as a code instructor for after school programs at local elementary schools.
+            </li>
+            <li>
+              Favorite video game is Path of Exile. 
+            </li>
+          </ul>
+        </section>
+
+        <a className={classes.link} href='mailto:zkyle12@gmail.com?Subject=Hello%20There!'>email</a>
+        <a className={classes.link} href='https://github.com/zkc'>github</a>
         
       </div>
 
