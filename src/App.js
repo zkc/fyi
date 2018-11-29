@@ -102,7 +102,7 @@ class App extends React.Component {
           </div>
 
           <div>
-            <h4 className={classes.jobHeader}>Bastian Software Solutions - Project Manager</h4>
+            <h4 className={classes.jobHeader}>Project Manager - Bastian Software Solutions</h4>
             <h5 className={classes.dates}>2014 - 2016</h5>
             <ul>
               <li className={classes.bulletPoint}>
@@ -115,7 +115,7 @@ class App extends React.Component {
           </div>
 
           <div>  
-            <h4 className={classes.jobHeader}>Indiana University School of Music - Lead Audio Engineer</h4>
+            <h4 className={classes.jobHeader}>Lead Audio Engineer - Indiana University School of Music</h4>
             <h5 className={classes.dates}>2012 - 2014</h5>
             <ul>
               <li className={classes.bulletPoint}>
