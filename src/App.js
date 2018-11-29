@@ -141,7 +141,7 @@ class App extends React.Component {
           </div>
 
           <div>
-            <h4 className={classes.jobHeader}>Indiana University, Bloomington</h4>
+            <h4 className={classes.jobHeader}>Indiana University, Bloomington IN</h4>
             <h5 className={classes.dates}>Bachelor of Science in Recording Arts, Informatics - 2012</h5>
             <ul>
               <li className={classes.bulletPoint}>
