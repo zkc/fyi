@@ -3,12 +3,12 @@ import injectSheet from 'react-jss'
 
 const styles = {
   base: {
-    background: '#ffcea3', 
+    background: '#fffafa', 
     padding: '0 40px 50px 40px',
     fontFamily:  "'Noto Sans', 'sans-serif'",
-    maxWidth: '1000px',
+    maxWidth: '800px',
     borderTopRightRadius: '50px',
-    borderBottomRightRadius: '50px'
+    borderLeft: '25px solid #8b8378'
 
   },
   nameHeader: {
@@ -37,7 +37,7 @@ const styles = {
     margin: '10px 20px'
   }, 
   line: {
-    border: '1px solid #000',
+    border: '1px solid #8b8378',
   }
 }
 
@@ -89,9 +89,9 @@ class App extends React.Component {
               <li className={classes.bulletPoint}>
                 Designed, implemented, and documented new architecture for our core automation functionality. Enjoyed the challenge of making something powerful enough for our expanding needs yet simple enough for less technical engineers to use directly.
               </li>
-              <li className={classes.bulletPoint}>
+              {/* <li className={classes.bulletPoint}>
                 Handled API design decisions when called upon by the dev team.
-              </li>
+              </li> */}
               <li className={classes.bulletPoint}>
                 Became a first point of contact for fixing issues in our legacy Python/Django system. 
               </li>
