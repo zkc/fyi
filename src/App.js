@@ -17,7 +17,7 @@ const styles = {
   subHeader: {
     fontSize: '2em'
   }, 
-  skillsSection: {
+  basicSection: {
     paddingLeft: '20px'
   },
   jobHeader: {
@@ -56,7 +56,7 @@ class App extends React.Component {
 
         <hr className={classes.line}/>
 
-        <section className={classes.skillsSection}>
+        <section className={classes.basicSection}>
           <h3>Skills</h3>
           <ul>
             <li>React</li> 
@@ -77,26 +77,37 @@ class App extends React.Component {
 
         <hr className={classes.line}/>
 
-        <section className={classes.skillsSection}>
+        <section className={classes.basicSection}>
+          <h3>Talks and Presentations</h3>
+          <ul>
+            <li>
+              <a className={classes.link} 
+                href="https://docs.google.com/presentation/d/1hzrjTMDvc1g6mIIzU2qMvs8z8d3YgzNMRC-Zg-QVozk/edit?usp=sharing">
+                CSS Grid
+              </a>
+            </li> 
+          </ul>
+        </section>
+
+        <hr className={classes.line}/>
+
+        <section className={classes.basicSection}>
           <h3>Work Experience</h3>
           <div>
             <h4 className={classes.jobHeader}>Software Developer - Charter Communications</h4>
             <h5 className={classes.dates}>2017 - current</h5>
             <ul>
               <li className={classes.bulletPoint}>
-                Built our greenfield React UI with Redux. Continued to be a resource on React for dev team. React is my strongest skill set so I jumped at the opportunity to initiate the codebase.
+                Built our greenfield React UI with Redux. Continued to be a contributor and resource on React for the dev team. React is my strongest skill set so I jumped at the opportunity to initiate the codebase.
               </li>
               <li className={classes.bulletPoint}>
-                Designed, implemented, and documented new architecture for our core automation functionality. Enjoyed the challenge of making something powerful enough for our expanding needs yet simple enough for less technical engineers to use directly.
-              </li>
-              {/* <li className={classes.bulletPoint}>
-                Handled API design decisions when called upon by the dev team.
-              </li> */}
-              <li className={classes.bulletPoint}>
-                Became a first point of contact for fixing issues in our legacy Python/Django system. 
+                Designed, implemented, and documented new architecture for our core automation functionality. Enjoyed the challenge of making something powerful enough for expanding needs, yet simple enough for less technical engineers to use directly.
               </li>
               <li className={classes.bulletPoint}>
-                Promoted dialogues within the group and man resulting in better agile processes and improved clarity of product requirements. 
+                Trusted to diagnose and fix production issues in our legacy Python/Django system.
+              </li>
+              <li className={classes.bulletPoint}>
+                Promoted dialogues within the full team resulting in better agile processes and improved clarity of product requirements.
               </li>
             </ul>
           </div>
@@ -109,7 +120,7 @@ class App extends React.Component {
                 Worked in tandem with developers to implement custom software for warehouse logistics systems, often on-site. My primary tool was SQL with MS SQL Server.
               </li>
               <li className={classes.bulletPoint}>
-                Established clear communications to convey detailed technical problems from our developers and designers to the end clients. Notably improved relations with a previously difficult client as a result.
+                Established clear communication methods to convey detailed technical problems from our developers and designers to our end clients. Notably improved relations with a previously difficult client as a result.
               </li>
             </ul>
           </div>
@@ -119,7 +130,7 @@ class App extends React.Component {
             <h5 className={classes.dates}>2012 - 2014</h5>
             <ul>
               <li className={classes.bulletPoint}>
-                Established the trust required for success in professional stage productions thru dedication to the craft.
+                Established the trust required for success in professional stage productions through dedication to the craft and strong interpersonal skills. 
               </li>
             </ul>
           </div>
@@ -127,7 +138,7 @@ class App extends React.Component {
 
         <hr className={classes.line}/>
 
-        <section>
+        <section className={classes.basicSection}>
           <h3>Education</h3>
 
           <div>
@@ -153,8 +164,20 @@ class App extends React.Component {
 
         <hr className={classes.line}/>
 
-        <section>
-          <h3>Fun Stuff</h3>
+        <section className={classes.basicSection}>
+          <h4>Tech Interests</h4>
+          <ul>
+            <li>
+              Distributed applications, blockchain technology, Web 3
+            </li>
+            <li>
+              Content Creator focused platforms, digital community building
+            </li>
+            <li>
+              Game design
+            </li>
+          </ul>
+          <h4>Fun Stuff</h4>
           <ul>
             <li>
               Grew up playing drums, currently play guitar.
@@ -170,6 +193,10 @@ class App extends React.Component {
 
         <a className={classes.link} href='mailto:zkyle12@gmail.com?Subject=Hello%20There!'>email</a>
         <a className={classes.link} href='https://github.com/zkc'>github</a>
+        <a className={classes.link} 
+          href='https://docs.google.com/document/d/10n4e5GJmGNMHm6Xgc-7rUQ7fCTa7cHDzdTPT1K87VJo/edit?usp=sharing'>
+          resume in doc format
+        </a>
         
       </div>
 
